@@ -3,11 +3,18 @@
 <link rel="shortcut icon" type="image/png" href="sad_emoji.png"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
+<style>
+body {
+  background-image: url('hearts.jpg');
+   background-size: cover;x
+}
+</style>
+
 <div style="text-align: center; height: 100%;" style="background-image: url('hugo_L.jpg');">
-<h1>If you know, you know</h1>
+<h1 style="color:red">Tess niaises depuis maintenant</h1>
 <p id="demo" style="font-size:160%;" style="text-align:center;">
 </p>
-<img height="50%" width="300" src="img2.png"/>
+<img height="100%" width="600" src="img2.png"/>
 </div>
 <!-- Display the countdown timer in an element -->
 
@@ -29,6 +36,9 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+   document.getElementById("demo").style.color = 'red'
+
 
   // Display the result in the element with id="demo"
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
